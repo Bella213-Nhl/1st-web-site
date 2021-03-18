@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}/*
+html{
+    scroll-behavior:smooth;
+}
+*/
+/*---------------------------------------------Max-width-----------------------------------------------------------------------*/
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+    
+}
+/*
+section {
+    padding: 100px 0;
+    
+}*/
+/* --------------------------------------------------------nav style----------------------------------------------------- */
+.nav {
+    position: fixed;/* position:sticky ; matetmachalich 3lech ?!... */
+    background-color: #000;/*
+    background: rgba(27, 26, 26, 0.1);*//*
+    box-shadow: 0 0 10px #b3b3b3;*/
+    width: 100%;
+    display: flex;
+    top: 0;
+    padding: 0px 10px;/*
+    margin-bottom: 500px;*//*
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;*/
+    z-index: 1;
+}
+
+.nav .max-width {
+    display: flex;
+   align-items: center;
+    justify-content: space-between;
+}
+
+
+.nav .list li{
+    list-style: none;
+    display: inline-block;
+    /*align-items: center;*/
+}
+
+.nav .list li a{
+    padding: 3px 8px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin:0 20px;/*
+    border: #000 1px solid;
+    border-radius: 2px;
+*/
+    transition: color 0.3s ease;
+}
+
+.nav .list li a:hover {
+   /* border-color: #fff;*/
+    color: rgb(219, 216, 216);
+}
+
+.nav img {
+    height: 35px;
+    width: 35px;
+    margin: 5px 0;
+    margin-right: 550px;
+    
+}
+/*------------------------------scroll-up-button--------------------------------------------*/
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 999999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+}
+
+/*
+.nav:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px #b3b3b3;
+}*/
+/*--------------------------------------D0 styling------------------------------------------*/
+.d0 {
+    max-width: 1300px;
+    padding: 0 80px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: row; /*make all the divs inside d0 in the same row *_*  ... */
+    justify-content: center;
+    border: rgb(207, 207, 207) 1px dotted;
+    border-radius: 3px;
+    margin: 10px;
+}
+
+.d0:hover {
+    
+    -moz-box-shadow: 0 0 5px #b3b3b3;
+-webkit-box-shadow: 0 0 5px #b3b3b3;
+box-shadow: 0 0 5px #b3b3b3;
+}
+/*---------------------------------------------------------D1 styling------------------------------------------------------*/
+.d1 {
+    align-items: center;
+    width: 100%;
+    margin-left: 5px; /*is margin: 0 5px; gonna work ???...*/
+    margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+/*--------------------------------------------------table styling-----------------------------------------------*/
+table {
+    background-color: rgba(102, 41, 41, 0.5);
+    margin: 20px;
+    padding: 10px;
+    border: dotted 2px #2a756b;
+    text-align: center;
+    color: white;
+}
+
+table td {
+    border: dotted 1px #2a756b;
+    padding: 5px;
+}
+/*--------------------------------------------------------------p tag styling--------------------------------------------------*/
+p {
+    margin: 10px;
+    padding: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: 3px dotted #ec670f;
+    color: white;
+    background: rgba(102, 215, 170, 0.3);
+}
+/*----------------------------------------------------------footer styling--------------------------------------------------------*/
+.foot {
+    background: #000;/*background: url("https://images.pexels.com/photos/3575654/pexels-photo-3575654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") no-repeat center;
+    */padding: 3px 8px;
+    text-align: center;
+    
+}
+
+.foot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.foot a:hover {
+    text-decoration: underline;
+}
+
+  /*----------------------------------------------home style------------------------------------------------------- */
+  .home {
+    
+    display: flex;
+    background: url("https://images.pexels.com/photos/3575654/pexels-photo-3575654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")/*("https://images.pexels.com/photos/2233416/pexels-photo-2233416.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")*/ no-repeat center;
+    height: auto;
+    padding: 100px 0;
+    color: #fff;
+    padding-bottom: 320px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width{
+    margin: auto 0 auto 30px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+ 
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px; 
+    color: rgba(235, 228, 20, 0.816);
+    margin-bottom: 40px;
+}
+
+.buttona {
+
+    padding: 12px 36px;
+    background: rgba(255, 255, 255, 0.816);
+    color: rgb(25, 128, 146);
+    border-radius: 5px;
+    font-size: 20px;
+}
+.buttona:hover{
+    border: 2px rgba(255, 255, 255, 0.816) solid;
+    color: rgba(255, 255, 255, 0.891);
+    background: none;
+}
+/*------------------------------------------Cats Styling--------------------------------------------------------------------------*/
+.cats {
+    display: flex;
+    background: url("https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") no-repeat center;
+    padding: 100px 0;
+    height:auto;
+    color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.cats .max-width{
+    margin: auto 0 auto 30px;
+}
+.cats .cats-content .text-1{
+    font-size: 27px;
+}
+.cats .cats-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+/*--------------------------------------------Horses Styling---------------------------------------------------------------------*/
+
+.horses {
+    display: flex;
+    background: #ad571e;
+    height: auto;
+    color: #fff;
+    padding: 100px 0;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.horses .max-width{
+    margin: auto 0 auto 30px;
+}
+.horses .horses-content .text-1{
+    font-size: 27px;
+}
+.horses .horses-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+/*------------------------------------------------Dogs Styling---------------------------------------------------------------*/
+.dogs {
+    display: flex;
+    background: url("https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") no-repeat center;
+    padding: 100px 0;
+    height: auto;
+    color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.dogs .max-width{
+    margin: auto 0 auto 30px;
+}
+.dogs .dogs-content .text-1{
+    font-size: 27px;
+}
+.dogs .dogs-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+/*-------------------------------------------Birds Styling---------------------------------------------------------------------------*/
+
+.birds {
+    display: flex;
+    background: url("https://images.pexels.com/photos/2575692/pexels-photo-2575692.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center;
+    padding: 100px 0;
+    height: auto;
+    color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.birds .max-width{
+    margin: auto 0 auto 30px;
+}
+.birds .birds-content .text-1{
+    font-size: 27px;
+}
+.birds .birds-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+/*------------------------------------------------Tab Styling---------------------------------------------------------------*/
+
+.tab {
+    display: flex;
+    background: url("https://images.pexels.com/photos/3575654/pexels-photo-3575654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") no-repeat center;
+    height: auto;
+    padding: 100px 0;
+    color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+    bottom: 0;
+
+}
+  /*
+
+wow I have PBsssss in table too I don't know how to style tables -_- ... 
+wow ... 
+*/
+@media (max-width: 500px) {/*
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+    .about .about-content .right .text,
+    .skills .skills-content .left .text{
+        font-size: 19px;
+    }
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }*/
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+}
